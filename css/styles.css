@@ -92,7 +92,7 @@ body {
   display:flex;
   flex-direction: column;
   width:60%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   padding:1em;
 }
@@ -213,6 +213,102 @@ footer a{
 footer p{
   margin:0;
 }
-@media screen and (min-width: 800px) and (max-width: 943px){
+@media screen and (min-width: 701px) and (max-width: 1200px){
+  .row.vid-desc{
+    flex-direction: column;
+    height: 600px;
+  }
+  .col.desc{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    font-size: 1.1rem;
+    font-weight: 300;
+    height: 150px;
+  }
+  .col.video{
+    width:100%;
+    padding:1em;
+    height: 350px;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  .video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+  }
+  .grid{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 4rem 4rem 4rem;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .row{
+    flex-direction: column;
+    height: 100%;
+    margin-top:0;
+  }
+  .col{
+    width: 100%;
+    margin: 2rem;
+  }
+  .quote-box{
+    padding: 1rem 1rem;
+  }
+  .course-desc{
+    padding: 0rem 3rem 1em 3rem;
+  }
+  .row.vid-desc{
+    flex-direction: column;
+    height: 550px;
+  }
+  .col.desc{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    font-size: 1.1rem;
+    font-weight: 300;
+    height: 150px;
+  }
+  .col.video{
+    width:100%;
+    padding:1em;
+    height: 350px;
+  }
+  .video-container {
+    position: absolute;
+    width: 100%;
+    margin-top:0px;
+    height: 0;
+    
+  }
+  .video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+  }
+  .grid{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem 4rem 1rem;
+  }
+  footer{
+    flex-direction: column;
+  }
 
 }
