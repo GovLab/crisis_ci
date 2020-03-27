@@ -1,12 +1,24 @@
 
 :root {
   --dark-grey: #272838;
-  --light-grey: #56E39F;
+  --light-green: #56E39F;
   --green: #59C9A5;
   --white: #ffffff;
   
   --theme-bg: rgba(0,0,0,0.03);
   font-size: 16px;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--white);
+}
+
+header img{
+  padding: 10px 0 10px 0;
+  height: 30px;
 }
 body {
   margin: 0;
@@ -58,7 +70,7 @@ body {
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  padding: 6rem 12rem 0 12rem;
+  padding: 4rem 12rem 4rem 12rem;
 }
 
 .row{
@@ -67,6 +79,7 @@ body {
   align-items: center;
   justify-content: center;
   width:100%;
+  margin-top: 2rem;
 }
 .col{
   display:flex;
@@ -78,13 +91,16 @@ body {
 .col.desc{
   display:flex;
   flex-direction: column;
-  width:50%;
+  width:60%;
   font-size: 1.2rem;
   font-weight: 300;
   padding:1em;
 }
+.row.vid-desc{
+  height: 300px;
+}
 .col.video{
-  width:50%;
+  width:40%;
   padding:1em;
 }
 .video-container {
@@ -118,8 +134,34 @@ z-index: 1;
 .center{
   padding: 0 2rem 0 2rem;
 }
+.quote-box{
+background-color: var(--white);
+margin: 2rem 0;
+padding: 1rem 4rem;
+line-height: 1.5;
+border-radius: 25px;
+color: var(--dark-grey);
+}
+.quote-box h3{
+  font-weight: 400;
+}
+#text-green{
+  color: var(--green);
+  font-weight: 600;
+}
+#author{
+  color: var(--green);
+  font-weight: 600;
+  margin: 1rem 2rem;
+}
+#module-name{
+  font-weight: 400;
+  color: var(--dark-grey);
+  margin: 1rem 2rem;
+}
 .card{
   display:flex;
+  flex-direction: column;
   justify-content: center;
   text-align:center;
   background-color: var(--white);
@@ -127,9 +169,11 @@ z-index: 1;
   width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  text-decoration: none;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 .how-banner {
   text-align:center;
@@ -138,9 +182,37 @@ z-index: 1;
 .how-banner p{
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--light-grey);
+  color: var(--light-green);
 }
-
+.card-image{
+  height: 40%;
+  width:100%;
+  background-color: var(--light-green);
+}
+.card-text{
+  height: 60%;
+  width:100%;
+}
+footer{
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(0,0,0);
+  color: rgba(255,255,255,0.5);
+  font-size: 0.8rem;
+  
+}
+footer img{
+  padding: 0 20px 0 20px;
+}
+footer a{
+  color: rgba(255,255,255,0.5);
+}
+footer p{
+  margin:0;
+}
 @media screen and (min-width: 800px) and (max-width: 943px){
 
 }
