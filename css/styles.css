@@ -271,7 +271,7 @@ footer p{
   }
   .row.vid-desc{
     flex-direction: column;
-    height: 550px;
+    height: 600px;
   }
   .col.desc{
     display:flex;
