@@ -150,15 +150,18 @@ color: var(--dark-grey);
   font-weight: 600;
 }
 #author{
-  color: var(--green);
+  color: var(--white);
   font-weight: 600;
-  margin: 1rem 2rem;
+  margin: 0.5rem 2rem 0 2rem;
+  line-height: 1;
 }
 #module-name{
-  font-weight: 400;
+  font-weight: 600;
   color: var(--dark-grey);
-  margin: 1rem 2rem;
+  margin: 1rem 1em 0 1rem;;
 }
+
+
 .card{
   display:flex;
   flex-direction: column;
@@ -185,13 +188,52 @@ color: var(--dark-grey);
   color: var(--light-green);
 }
 .card-image{
-  height: 40%;
-  width:100%;
-  background-color: var(--light-green);
+  height: 65%;
+  /* background-color: var(--light-green); */
 }
 .card-text{
-  height: 60%;
+  height: 35%;
   width:100%;
+  background-color:var(--light-green);
+}
+.icon {
+  display: inline-block;
+  height: 100%;
+  width:80%;
+  background-size: cover;
+}
+.module1 {
+  background-image: url(../img/problem.png);
+}
+.module2 {
+  background-image: url(../img/evidence.png);
+}
+.module3 {
+  background-image: url(../img/network.png);
+}
+.module4 {
+  background-image: url(../img/data.png);
+}
+.module5 {
+  background-image: url(../img/chatbot.png);
+}
+.module6 {
+  background-image: url(../img/funding.png);
+}
+.module7 {
+  background-image: url(../img/experts.png);
+}
+.module8 {
+  background-image: url(../img/crowds.png);
+}
+.module9 {
+  background-image: url(../img/monitoring.png);
+}
+.module10 {
+  background-image: url(../img/secondary.png);
+}
+.module11 {
+  background-image: url(../img/lessons.png);
 }
 footer{
   display:flex;
