@@ -8,6 +8,12 @@
   --theme-bg: rgba(0,0,0,0.03);
   font-size: 16px;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 header{
   display: flex;
   align-items: center;
@@ -70,7 +76,7 @@ body {
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 12rem 4rem 12rem;
+  padding: 4rem 12rem 2rem 12rem;
 }
 
 .row{
@@ -134,16 +140,34 @@ z-index: 1;
 .center{
   padding: 0 2rem 0 2rem;
 }
-.quote-box{
+
+.white-section{
+  display:flex;
+  flex-direction: column;
 background-color: var(--white);
-margin: 2rem 0;
-padding: 1rem 4rem;
-line-height: 1.5;
-border-radius: 25px;
+margin: 0rem 0;
+padding: 2rem 12rem;
+line-height: 1.8;
 color: var(--dark-grey);
 }
-.quote-box h3{
+.white-section h3{
   font-weight: 400;
+}
+.logo-row{
+  margin-top:40px;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.logo-col img{
+  height:60px;
+}
+.logo-col.gl img{
+  height:40px;
+}
+.logo-col.jhs img{
+  height:80px;
 }
 #text-green{
   color: var(--green);
@@ -175,7 +199,7 @@ color: var(--dark-grey);
   text-decoration: none;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
   cursor: pointer;
 }
 .how-banner {
@@ -286,6 +310,12 @@ footer p{
     width: 100%;
     height: 90%;
   }
+  .white-section{
+    padding: 0 1rem;
+  }
+  .logo-row{
+    flex-direction: column;
+  }
   .grid{
     display:flex;
     flex-direction:column;
@@ -315,6 +345,19 @@ footer p{
     flex-direction: column;
     height: 600px;
   }
+  .white-section{
+    padding: 0 1rem;
+  }
+  .logo-row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:0;
+  }
+  .logo-col{
+    padding: 2rem 0;
+  }
+
   .col.desc{
     display:flex;
     flex-direction: column;
