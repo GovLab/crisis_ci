@@ -63,6 +63,7 @@ body {
   font-size: 12pt;
 }
 .course-desc{
+  height: 30vh;
   background-color: var(--white);
   margin:0;
   padding: 0rem 12rem 1em 12rem;
@@ -70,6 +71,51 @@ body {
 }
 .course-desc p{
   margin:0;
+}
+.mod-video{
+  background-color: var(--white);
+  margin:0;
+  padding: 0rem 12rem 1em 12rem;
+  text-align: center;
+}
+.mod-video .col.video{
+  width:60%;
+}
+.mod-video h1{
+  margin-top:0;
+  padding-top:20px;
+  margin-bottom:10px;
+  text-transform: uppercase;
+  font-weight:200;
+  border-bottom: 1px solid var(--light-green);
+  padding-bottom: 3px;
+}
+.mod-video p{
+  margin-bottom:0;
+}
+.mod-video a{
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+}
+.row.module{
+  margin-top:0;
+}
+.row.module h2{
+  margin-top:0;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: var(--light-green);
+}
+.row.module a{
+ color: var(--green);
+ text-decoration: none;
+ font-weight:400;
+}
+
+.col.desc.module{
+  padding:0;
 }
 .grid{
   display:flex;
@@ -105,6 +151,14 @@ body {
 .row.vid-desc{
   height: 300px;
 }
+.row.vid-desc.module{
+  margin-top:0;
+  height: 200px;
+}
+.mod-video .row{
+  margin-top:0;
+  height: 400px;
+}
 .col.video{
   width:40%;
   padding:1em;
@@ -123,8 +177,11 @@ body {
   height: 100%;
 }
 .main-button{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
-margin-bottom: -55px;
+margin-top: -25px;
 position: relative;
 z-index: 1;
 }
@@ -136,7 +193,9 @@ z-index: 1;
   font-weight: 600;
   text-transform: uppercase;
 }
-
+.btn1{
+  margin-right:10px;
+}
 .center{
   padding: 0 2rem 0 2rem;
 }
@@ -280,6 +339,9 @@ footer p{
   margin:0;
 }
 @media screen and (min-width: 701px) and (max-width: 1200px){
+  .main-button{
+    flex-direction: column;
+  }
   .row.vid-desc{
     flex-direction: column;
     height: 600px;
@@ -326,6 +388,13 @@ footer p{
 }
 
 @media screen and (max-width: 700px){
+  .main-button{
+    flex-direction: column;
+  }
+  .btn1{
+    margin-right:0;
+    margin-bottom:10px;
+  }
   .row{
     flex-direction: column;
     height: 100%;
