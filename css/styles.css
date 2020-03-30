@@ -36,7 +36,7 @@ body {
 
 .hero{
   background: var(--white); 
-  height: 35vh;
+  height: 25vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,6 +61,9 @@ body {
   margin: 0 0 4em 0em;
   color: #ffffff;
   font-size: 12pt;
+}
+.course-desc.how{
+  height:100px;
 }
 .course-desc{
   height: 30vh;
@@ -148,8 +151,12 @@ body {
   font-weight: 300;
   padding:1em;
 }
-.row.vid-desc{
+/* .row.vid-desc{
   height: 300px;
+} */
+.row.vid-desc{
+  margin-top:0;
+  height: 200px;
 }
 .row.vid-desc.module{
   margin-top:0;
