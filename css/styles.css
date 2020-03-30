@@ -385,9 +385,13 @@ footer p{
     justify-content: center;
     padding: 4rem 4rem 4rem 4rem;
   }
+  .mod-video{
+    padding: 0rem 1rem 0 1rem;
+  }
 }
 
 @media screen and (max-width: 700px){
+
   .main-button{
     flex-direction: column;
   }
@@ -412,7 +416,7 @@ footer p{
   }
   .row.vid-desc{
     flex-direction: column;
-    height: 600px;
+    height: 400px;
   }
   .white-section{
     padding: 0 1rem;
@@ -463,6 +467,9 @@ footer p{
   }
   footer{
     flex-direction: column;
+  }
+  .mod-video{
+    padding: 0rem 1rem 0 1rem;
   }
 
 }
