@@ -1,7 +1,9 @@
 
 :root {
   --dark-grey: #272838;
+  --dark-grey-40: #27283857;
   --light-green: #56E39F;
+  --light-green-transparent: rgba(86, 227, 159, 0.418);
   --light-grey: #dadada;
   --green: #59C9A5;
   --white: #ffffff;
@@ -512,6 +514,53 @@ footer{
   .active .material-icons:before { 
     font-weight: 200;
     content: 'keyboard_arrow_up';
+  }
+  .custom-form{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .grid.form{
+    padding: 2rem 8rem;
+  }
+  .form h4{
+    margin:0;
+  }
+  input[type=text]{
+    width: 100%;
+    padding: 20px 100px;
+    margin: 10px 0;
+    display: inline-block;
+    border: none;
+    color: #ffffff;
+    background-color:var(--white);
+    border-radius: 0px;
+    box-sizing: border-box;
+  }
+  #long-answer{
+    padding:60px 100px;
+  }
+  ::placeholder {
+    color: var(--dark-grey-40);
+    font-weight: 600;
+  }
+
+  button{
+    background-color: var(--light-green);
+    border: none;
+    color: rgb(33, 37, 41);
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  #thank-you{
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 footer img{
   padding: 0 20px 0 20px;
