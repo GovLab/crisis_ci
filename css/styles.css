@@ -2,6 +2,7 @@
 :root {
   --dark-grey: #272838;
   --light-green: #56E39F;
+  --light-grey: #dadada;
   --green: #59C9A5;
   --white: #ffffff;
   
@@ -26,6 +27,34 @@ header img{
   padding: 10px 0 10px 0;
   height: 30px;
 }
+.gl-header{
+  display:flex;
+  flex-direction: column;
+  padding:0 12rem;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:100%;
+  margin-top:10px;
+}
+.menu a{
+  color: var(--dark-grey);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid var(--light-green);
+  transition: all .2s ease-in-out;
+}
+.menu a:hover{
+  transform: scale(1.1);
+}
+#contribute{
+  background-color: var(--light-green);
+  padding:2px 4px;
+  border-bottom: 0px;
+}
+
 body {
   margin: 0;
   font-family: 'proxima-nova', sans-serif;
@@ -90,7 +119,10 @@ body {
   margin-bottom:10px;
   text-transform: uppercase;
   font-weight:200;
+}
+.mod-video h4{
   border-bottom: 1px solid var(--light-green);
+  margin-top:0px;
   padding-bottom: 3px;
 }
 .mod-video p{
@@ -292,6 +324,9 @@ color: var(--dark-grey);
   width:80%;
   background-size: cover;
 }
+.grey{
+  filter: grayscale(100%);
+}
 .module1 {
   background-image: url(../img/problem.png);
 }
@@ -346,12 +381,17 @@ footer p{
   margin:0;
 }
 @media screen and (min-width: 701px) and (max-width: 1200px){
+  .gl-header{
+    padding:0 4rem;
+
+  }
+
   .main-button{
     flex-direction: column;
   }
   .row.vid-desc{
     flex-direction: column;
-    height: 600px;
+    height: 200px;
   }
   .col.desc{
     display:flex;
@@ -398,7 +438,20 @@ footer p{
 }
 
 @media screen and (max-width: 700px){
+  .gl-header{
+    padding:0 4rem;
+    justify-content: center;
+    text-align: center;
+  }
 
+.menu{
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.menu a{
+  border-bottom:0;
+  margin-bottom:20px;
+}
   .main-button{
     flex-direction: column;
   }
@@ -423,7 +476,7 @@ footer p{
   }
   .row.vid-desc{
     flex-direction: column;
-    height: 400px;
+    height: 300px;
   }
   .white-section{
     padding: 0 1rem;
