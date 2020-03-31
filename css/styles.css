@@ -39,6 +39,7 @@ header img{
   width:100%;
   margin-top:10px;
 }
+
 .menu a{
   color: var(--dark-grey);
   font-weight: 500;
@@ -107,7 +108,7 @@ body {
 .mod-video{
   background-color: var(--white);
   margin:0;
-  padding: 0rem 12rem 1em 12rem;
+  padding: 4rem 12rem 1em 12rem;
   text-align: center;
 }
 .mod-video .col.video{
@@ -120,11 +121,13 @@ body {
   text-transform: uppercase;
   font-weight:200;
 }
-.mod-video h4{
-  border-bottom: 1px solid var(--light-green);
+.mod-video #inst-link{
+  border-bottom: 3px solid var(--light-green);
   margin-top:0px;
   padding-bottom: 3px;
+  color: #000000;
 }
+
 .mod-video p{
   margin-bottom:0;
 }
@@ -519,14 +522,25 @@ footer a{
 footer p{
   margin:0;
 }
+@media screen and (min-width: 1401px){
+  .mod-video .row{
+    height: 500px;
+  }
+
+}
 @media screen and (min-width: 701px) and (max-width: 1200px){
   .gl-header{
     padding:0 4rem;
 
   }
-
+  .mod-video .row.vid-desc {
+    height: 400px;
+  }
   .main-button{
     flex-direction: column;
+  }
+  .btn1{
+    margin-right:0;
   }
   .row.vid-desc{
     flex-direction: column;
@@ -593,6 +607,9 @@ footer p{
 }
   .main-button{
     flex-direction: column;
+  }
+  .btn1{
+    margin-right:0;
   }
   .btn1{
     margin-right:0;
