@@ -371,6 +371,145 @@ footer{
   font-size: 0.8rem;
   
 }
+.heading{
+  text-align:center;
+  background-color:var(--white);
+}
+.heading h1{
+  margin:0;
+  padding: 20px;
+  text-decoration: underline;
+  text-decoration-color: var(--light-green);
+  font-weight: 200;
+}
+
+.bio{
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bio .image{
+  flex-direction: column;
+  width: 30%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  
+}
+.bio .image img{
+  width: auto;
+    height: 110%;
+
+  }
+  
+  .bio .image .square{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid var(--light-green);
+  }
+  .bio-desc{
+    text-align:left;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+  .bio-desc p{
+    font-size: 1rem;
+    padding-bottom:0;
+    font-weight: 300;
+    text-align: left;
+  }
+  .bio-desc h4{
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding:0;
+    margin:0;
+    text-align: left;
+  }
+  .bio-desc h6{
+    font-size: 1rem;
+    color: var(--green);
+    font-weight: 400;
+    padding:0;
+    margin:0;
+    text-align: left;
+  }
+  
+  .down{
+   display:flex;
+   justify-content: center;
+   align-items:center;
+  }
+  .material-icons {
+    direction: ltr;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    margin-top: -2px;
+  }
+  .panel {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    background-color: rgba(27, 138, 207, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  
+  }
+  .accordion{
+    background-color: rgba(27, 138, 207, 0);
+    cursor: pointer;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    order: 3;
+    flex-direction: row;
+    padding: 0;
+  }
+  .accordion:hover{
+    zoom: 1;
+  }
+  
+  .active{
+    font-size: 1rem;
+  }
+  .accordion:before {
+    content: "MORE";
+    font-weight: 600;
+  }
+  .active:before {
+    content: "LESS";
+  }
+  
+  .accordion .material-icons:before {
+    font-weight: 200;
+    content: 'keyboard_arrow_down';
+  }
+  .active .material-icons:before { 
+    font-weight: 200;
+    content: 'keyboard_arrow_up';
+  }
 footer img{
   padding: 0 20px 0 20px;
 }
@@ -524,6 +663,28 @@ footer p{
     align-items: center;
     justify-content: center;
     padding: 4rem 1rem 4rem 1rem;
+  }
+  .bio{
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+   
+  }
+  .bio .image{
+    width: 100%;
+  }
+  .bio-desc{
+    width: 100%;
+  }
+  .bio-desc h4{
+    text-align: center;
+  }
+  .bio-desc h6{
+    text-align: center;
+  }
+  .accordion{
+    text-align: center;
   }
   footer{
     flex-direction: column;
