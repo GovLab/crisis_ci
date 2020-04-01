@@ -700,6 +700,7 @@ footer p{
 }
   .main-button{
     flex-direction: column;
+    padding: 0 6rem;
   }
   .btn1{
     margin-right:0;
