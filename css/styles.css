@@ -365,6 +365,10 @@ color: var(--dark-grey);
 .module11 {
   background-image: url(../img/lessons.png);
 }
+.module12 {
+  background-image: url(../img/collective.png);
+}
+
 footer{
   display:flex;
   align-items: center;
