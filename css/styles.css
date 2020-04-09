@@ -609,7 +609,23 @@ color: var(--dark-grey);
     justify-content: center;
     align-items: center;
   }
+#pledge-text{
+  height:100%;
+  padding:0 12rem;
+  text-align: left;
+}
+#pledge-text h1{
+  padding-left:0;
+}
 
+#cc{
+  display:flex;
+  flex-direction: row;
+}
+footer{
+  display:flex;
+  flex-direction: column;
+}
 footer img{
   padding: 0 20px 0 20px;
 }
@@ -618,6 +634,9 @@ footer a{
 }
 footer p{
   margin:0;
+}
+#covid-pledge{
+  height:100px;
 }
 @media screen and (min-width: 1401px){
   .mod-video .row{
@@ -698,6 +717,10 @@ footer p{
   .main-button{
     flex-direction: column;
     padding: 0 4rem;
+  }
+  #cc{
+    display:flex;
+    flex-direction: column;
   }
 }
 
@@ -827,5 +850,9 @@ footer p{
   }
   .grid.form{
     padding: 2rem 2rem;
+  }
+  #cc{
+    display:flex;
+    flex-direction: column;
   }
 }
