@@ -371,6 +371,9 @@ color: var(--dark-grey);
 .module13 {
   background-image: url(../img/organization.png);
 }
+.module14 {
+  background-image: url(../img/collaborate.png);
+}
 
 footer{
   display:flex;
