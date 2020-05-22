@@ -374,7 +374,9 @@ color: var(--dark-grey);
 .module14 {
   background-image: url(../img/collaborate.png);
 }
-
+.module15 {
+  background-image: url(../img/data-viz.png);
+}
 footer{
   display:flex;
   align-items: center;
